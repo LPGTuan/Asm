@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        #container {
+            width: 1000px;
+            height: 1800px;
+            font-style:unset;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(6, 7, 85);
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(5, 12, 78);
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        nav a {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(22, 3, 90);
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        article {
+            width: 70%;
+            height: 800px;
+            background-color: white;
+            float: left;
+            font-style:inherit;
+            font-weight: bold;
+        }
+
+        aside {
+            width: 30%;
+            height: 50px;
+            background-color: white;
+            float: left;
+        }
+
+        footer {
+
+            clear: both;
+            width: 100%;
+            height: 250px;
+            background-color:aliceblue;
+            line-height: 50px;
+            text-align: center;
+            font-size: 13px;
+            display: flex;
+            margin:auto; font-weight: bold;
+        }
+
+        .text-hover:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .hotro1 {
+            flex: 33%;
+
+        }
+
+        .hotro2 {
+            flex: 33%;
+
+        }
+
+        .hotro3 {
+            flex: 34%;
+
+        }
+
+        .sub-menu{
+            margin: 0px;
+            padding: 0px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orange;
+            list-style: none;
+            width: 150px;
+            position: absolute;
+            display:none ;
+            padding-right: 25px;
+
+        }
+        .sub-menu>li>a{
+            display: block;
+            line-height: 30px;
+            text-decoration: none;
+            font-variant:small-caps ;
+            padding-left: 25px;
+            background: url('b1.gigiff') no-repeat left center;
+            color: black;
+
+        }
+        .sub-menu>li>a>hover{
+            background: url("b2.") no-repeat left center;
+            color: red ;
+            font-weight: bolder;
+
+        }
+        ul.sub-menu>li>a:hover{
+            color: red;
+
+        }
+
+        .hmenu{
+            margin: 0px;
+            padding: 0px;
+            border-radius: 5px;
+
+            list-style: none;
+
+            height: 40px;
+        }
+        ul.hmenu>li>a {
+            display: block;
+            line-height: 40px;
+            text-decoration: none;
+            font-variant: small-caps;
+            padding-left: 30px;
+            color: white;
+        }
+        ul.hmenu>li>a:hover {
+            color : yellow;
+            font-weight: bolder;
+
+        }
+        ul.hmenu>li{
+            float: left;
+            margin : 0 5px;
+            position: relative;
+
+        }
+        ul.hmenu>li:hover>.sub-menu{
+            display: block;
+        }
+
+        h1 {
+            color: #ff0000;
+            border: 1px solid red;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        table {
+            text-align: left;
+
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <header>
+        <a href="index.html"> <img src="https://th.bing.com/th?id=OIP.p65iKkqgJZ3DHKMvdylXtgHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" width="1000" height="300" /> </a>
+    </header>
+    <nav>
+        <ul class="hmenu">
+            <li><a href="index.html">TRANG CHỦ </a> </li>
+
+            <li><a href="/home/chitietsanpham">CHI TIẾT SẢN PHẨM</a></li>
+
+            <!-- <li><a href="layout3.html">HÌNH ẢNH </a> </li> -->
+            <li><a href="/Banhang.html">MUA XE</a>></li>
+            <li><a href="  ">BẢNG GIÁ </a>
+                <ul class="sub-menu">
+
+                    <li><a href="layout4.html">Hãng Quốc Tế</a></li>
+                    <li><a href="layout4a.html">Hãng Nội Địa</a></li>
+                </ul>
+            </li>
+            <li><a href="/home/dangnhap">ĐĂNG NHẬP</a></li>
+            <li><a href="/home/dangky">ĐĂNG KÝ</a></li>
+        </ul>
+
+
+    </nav>
+    <article>
+        <a class="text-hover" href="index.html">
+            <h1>Trang chủ</h1>
+        </a>
+        <a href="https://www.carmudi.vn/blog-xe-hoi/kham-pha-5-chiec-o-to-dat-nhat-the-gioi-2022/">Top dòng xe sang
+            và đắt nhất thế giới</a>
+
+        <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Boat_Tail">
+            <p>1.Rolls-Royce Boat Tail: 28 triệu USD
+        </a></p>
+        Vào tháng 05-2021, Rolls Royce Boat Tail được ra mắt lần đầu tiên tại Triển lãm Concorso d'Eleganza Villa
+        d'Este 2021 tại Ý. Đặc biệt hơn, chiếc xe chỉ được trưng bày trước khách tham quan và báo giới hai ngày. Sau
+        đó đã được quay lại không gian riêng và kín đáo.
+        Rolls-Royce Boat Tail có giá bán khoảng 28 triệu USD, trở thành mẫu xe siêu sang đắt nhất thế giới. Boat
+        Tail sở hữu ngoại thất hai tông màu độc đáo, nội thất cao cấp tùy chỉnh và thậm chí là một "bộ lưu trữ" hoàn
+        chỉnh với tủ lạnh có sâm panh.Rolls-Royce Boat Tail sử dụng động cơ V12 6,75 lít tăng áp kép cho công suất
+        563 mã lực.
+        <a href="https://vi.wikipedia.org/wiki/Bugatti_La_Voiture_Noire">
+            <p>2.Bugatti La Voiture Noire: 13,4 triệu USD
+        </a></p>
+        Bugatti là thương hiệu siêu xe giành cho giới thượng lưu và siêu giàu. Vậy nên không bất ngờ gì khi giá của
+        Bugatti có mức giá cao hơn gấp 10 lần siêu xe bình thường.
+        Với mức giá 13,4 triệu USD, Bugatti La Voiture Noire độc nhất vô nhị là chiếc Bugatti mới đắt nhất từng được
+        sản xuất.
+        Là phiên bản hiện đại cho chiếc Type 57 SC Atlantic cá nhân của Jean Bugatti, La Voiture Noire sử dụng động
+        cơ W16 8,0 lít, vốn được chia sẻ từ phiên bản Chiron tiêu chuẩn, sản sinh công suất 1.479 mã lực. Xe có 6
+        đầu ống xả, bánh xe mới hoàn toàn, một tấm chắn sáng mạnh mẽ, độc đáo và một huy hiệu ánh sáng khổng lồ ở
+        phía sau khắc tên thương hiệu.
+        Tại thời điểm ra mắt, Bugatti La Voiture Noire là mẫu xe thương mại đắt nhất thế giới, trước khi danh hiệu
+        này thuộc về mẫu Rolls-Royce Boat Tail vào năm 2021.
+        <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Sweptail">
+            <p>3.Rolls-Royce Sweptail: 12,8 triệu USD
+        </a></p>
+        Tại thời điểm ra mắt vào năm 2017, Rolls-Royce Sweptail là chiếc xe mới đắt nhất mọi thời đại với 12,8 triệu
+        USD. Xe chỉ sản xuất duy nhất một bản trên toàn cầu dành cho vị tỷ phú giấu tên.
+        Vị khách yêu cầu một chiếc Rolls-Royce hai cửa, hai chỗ ngồi độc quyền với mái kính tinh xảo và phù hợp với
+        những đặc điểm riêng của nó. Xe sở hữu động cơ V12 turbo, 6,75 lít, cung cấp 453 mã lực, cùng hộp số tự động
+        8 cấp, dẫn động cầu sau của nguyên mẫu Phantom Coupe.
+        <a href="https://en.wikipedia.org/wiki/Bugatti_Centodieci">
+            <p>4.Bugatti Centodieci: 9 triệu USD
+        </a></p>
+        Bugatti Centodieci ( tiếng Ý có nghĩa là "110") là một chiếc xe thể thao động cơ đặt giữa được sản xuất giới
+        hạn bởi nhà sản xuất ô tô Bugatti của Pháp . Chiếc xe là sự tôn kính đối với Bugatti EB110 và kỷ niệm sinh
+        nhật lần thứ 110 của thương hiệu Bugatti .
+        Nó đã được tiết lộ vào ngày 16 tháng 8 năm 2019 tại "The Quail – A Motorsports Gathering" ở California, Hoa
+        Kỳ.Centodieci nhẹ hơn 20 kg so với Bugatti Chironvà có động cơ W16 tăng áp kép 8.000 cc (8,0 L; 488,2 cu
+        in), công suất 1.176 kW (1.600 PS; 1.578 mã lực) tại 7.000 vòng / phút. Việc sản xuất Centodieci được giới
+        hạn ở 10 chiếc với giá 9 triệu euro (khoảng 8 triệu đô la theo tỷ giá hối đoái năm 2019) mỗi chiếc.
+        <!-- <a class="text-hover" href="layout2.html">
+            <h1>Tin Tức</h1>
+        </a>
+        <table border="1" width="700px" height="400px">
+            <tr>
+                <td>
+
+                    <a
+                        href="https://www.carmudi.vn/blog-xe-hoi/ong-dang-le-nguyen-vu-cam-lai-chiec-honda-civic-type-r-doc-nhat-viet-nam/">
+                        <p> Ông Đặng Lê Nguyên Vũ cầm lái chiếc hoda Civic Type R(với giá bán tại mỹ : 37.000USD)
+                            độc nhất Việt Nam </p> <img
+                            src="https://static.carmudi.vn/wp-content/uploads/2022-10/AsccfRbFEN_194_145.webp"
+                            height="100px" width="200px" />
+                    </a>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <a
+                        href="https://www.carmudi.vn/blog-xe-hoi/trai-nghiem-lai-thu-14-dong-xe-mercedes-benz-tri-gia-hon-100-ty-dong-tai-mbdf-2022/">
+                        <p> Trải nghiệm lái thử 14 dòng xe Mercedes-Benz trị giá hơn 100 tỷ đồng tại MBDF 2022
+                            Mercedes-Benz Driving Festival – Lễ hội Lái & Trải nghiệm xe Mercedes-Benz (MBDF) là
+                            phiên bản mới của Chương trình Học viện Lái xe An toàn Mercedes-Benz (MBDA).
+                        </p>
+                        <img src="https://static.carmudi.vn/wp-content/uploads/2022-09/H8A1GnruVC_194_145.webp"
+                            height="100" width="200" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a
+                        href="https://tapchisieuxe.com/bat-gap-ngua-chien-ferrari-458-italia-do-liberty-walk-doc-nhat-vn-tai-xuat-sau-thoi-gian-dai-o-an.html">
+                        <p>
+                            Bắt gặp “ngựa chiến” Ferrari 458 Italia độ Liberty Walk độc nhất VN tái xuất sau thời
+                            gian dài “ở ẩn”
+
+                        </p> <img src="/anh/ferrari.jfif" height="100px" width="200px" />
+
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a
+                        href="https://tapchisieuxe.com/du-tuoi-hoc-cap-3-bieu-tuong-xe-the-thao-nhat-ban-nissan-gt-r-van-chua-ra-mat-the-he-moi.html">
+                        <p>
+
+                            Biểu tượng xe thể thao Nhật Bản Nissan GT-R vẫn tiếp tục cho ra mắt bản facelift lần thứ
+                            3, tuy vậy, Nissan GT-R đã có thiết kế bodykit mới cùng một số nâng cấp nhỏ bên dưới lớp
+                            vỏ. Đủ tuổi học cấp 3, biểu tượng xe thể thao Nhật Bản Nissan GT-R vẫn chưa ra mắt thế
+                            hệ mới
+                        </p>
+                        <img src="/anh/gtr.jfif" height="100px" width="200px" />
+                    </a>
+                </td>
+            </tr>
+
+        </table> -->
+
+
+    </article>
+    <aside>
+        <a class="text-hover" href="layout3.html">
+            <h1>Hình ảnh</h1>
+        </a>
+        <img src="https://dailychevrolet.vn/wp-content/uploads/2022/11/HC3ACnh-siC3AAu-xe-Lamborghini-cE1BBB1c-C491E1BAB9p-scaled.jpg" width="295px" height="210px" />
+        <img src="https://welovecar.vn/wp-content/uploads/2021/06/wlc-Bugatti-La-Voiture-Noire-4.jpg" width="295px"
+             height="170px" />
+        <img src="data:image/jpeg;base64,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" width="295px" height="150px" />
+        <img src="https://th.bing.com/th?id=OIP.zggA9eBk3_MCq56p21yS0gHaE6&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" width="295px" height="170px" />
+        <!--
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7836.3149575271755!2d106.63104772334675!3d10.87562441528964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1676560473229!5m2!1svi!2s"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </aside>
+<!--    <footer>-->
+<!--        <div class="hotro1">Hỗ trợ khách hàng<br>SDT: 0355213490<br>Facebook: Lê-->
+<!--            Đẳng<br>Gmail:Chidanng@gamil.com<br>Địa chỉ: Tân Chánh Hiệp-Q12-TP Hồ Chí Minh</div>-->
+<!--        <div class="hotro2">Hỗ trợ khách hàng<br>SDT: 0355213490<br>Facebook: Lê-->
+<!--            Đẳng<br>Gmail:Chidanng@gamil.com<br>Địa chỉ: Tân Chánh Hiệp-Q12-TP Hồ Chí Minh</div>-->
+<!--        <div class="hotro3">Hỗ trợ khách hàng<br>SDT: 0355213490<br>Facebook: Lê-->
+<!--            Đẳng<br>Gmail:Chidanng@gamil.com<br>Địa chỉ: Tân Chánh Hiệp-Q12-TP Hồ Chí Minh</div>-->
+<!--    </footer>-->
+
+</div>
+</body>
+</html>

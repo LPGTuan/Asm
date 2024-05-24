@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color:aliceblue;
+        }
+
+        .navbar-nav mx-auto mt-2 mt-lg-0 .nav-item active li-nav-menu {
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .main-nav-menu ul {
+            margin-top: 42px;
+        }
+
+        .main-nav-menu ul li {
+            color:beige;
+            list-style-type: none;
+            display: inline;
+            margin-left: 50px;
+        }
+
+        .logo {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 8px 10px;
+        }
+
+        .example {
+            background: rgb(169, 226, 227);
+            outline: none;
+            border-radius: 0;
+            box-shadow: 0 0 0;
+            border: none;
+            color: #1e1e1e;
+            padding-left: 15px;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 25px;
+            margin-right: 60px;
+        }
+
+        .giohang {
+
+            margin-top: 50px;
+            margin-left: 523px;
+        }
+
+        .main-nav-menu ul {
+            background-color: rgb(16, 8, 138);
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .main-nav-menu ul li {
+            color: rgb(186, 100, 184);
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -5px;
+        }
+
+        .main-nav-menu ul li a {
+            color:white;
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: black(217, 211, 140);
+        }
+
+        .mua {
+            text-align: center;
+            padding: 5px;
+            padding: 5px;
+            background-color: pink;
+            margin: 5px;
+            width: 90%;
+        }
+        .mua a{
+            text-decoration: none;
+
+        }
+
+        .san-pham {
+            border: 1px solid pink;
+            display: inline-block;
+        }
+
+        .container {
+            display: flexbox;
+        }
+
+        .example {
+            float: left;
+            max-width: 100%;
+            padding: 10px;
+            color: white;
+            font-size: 17px;
+            border: 0px solid grey;
+            border-left: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .giohang {
+            content: attr(value);
+            font-size: 12px;
+            color: black;
+            border-radius: 50%;
+            position: relative;
+            left: -8px;
+            top: -10px;
+            opacity: 0.9;
+            float: left;
+        }
+
+        .giohang.textgiohang {
+            text-decoration: none;
+        }
+
+        .cart-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(./cart-top.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 25px;
+
+        }
+
+        .colum {
+            text-align: center;
+        }
+        .testgt a{
+            text-decoration: none;
+        }
+
+
+        /* box - 3 */
+        #spnoibat{
+            width: 80%;
+            height: 1300px;
+            margin: auto;
+            text-align: center;
+            /* float: left; */
+        }
+        /* box-4 */
+        #spbanchay{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            /* float: left; */
+            /* background-color: aquamarine; */
+        }
+        .dong{
+            width: 100%;
+            float: left;
+        }
+        .san-pham-4{
+            width: calc(25% - 22px);
+            margin: 10px;
+            border: 1px solid pink;
+            float: left;
+        }
+        .san-pham-4 img{
+            width: 100%;
+        }
+        /* box-5*/
+        #tintuc{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .tintuc{
+            width: 80%;
+            background-color: crimson;
+            margin: auto;
+            text-align: center;
+
+        }
+        .tintuc-2{
+            width: calc(50% - 10px);
+            margin: 3px;
+            border: 1px solid pink;
+            float: left;
+            background-color: crimson;
+        }
+        .tintuc-2 img{
+            width: 50%;
+        }
+        #footer{
+            width: 80%;
+            /* height: 700px; */
+            margin: auto;
+            background-color: gray;
+        }
+        #dongdau{
+            width: 100%;
+            height: 600px;
+            background-color: white;
+
+            /* border: 1px solid black; */
+            box-sizing: border-box
+
+        }
+        .cot{
+            width: 25%;
+            float: left;
+            background-color: white;
+            box-sizing: border-box;
+            text-align: center;
+            /* border: 1px solid aqua; */
+            padding: 10px;
+        }
+        .cot h3{
+            /* margin-bottom: 15px; */
+            color: gray;
+            padding: 10px;
+
+        }
+        .cot a{
+            /* display: block; */
+            text-decoration: none;
+            color: grey;
+        }
+        .cot ul li{
+            list-style: none;
+            margin: 5px;
+        }
+        #donghai{
+            background-color: gray;
+            margin: 30px;
+            height: 70px;
+        }
+        #ngonngu{
+            width: 15%;
+            float: left;
+        }
+        #ngonngu button{
+            padding: 8px;
+            width: 100%;
+            background-color: white;
+            color: gray;
+            height: 34px;
+            border-radius: 17px;
+        }
+        #ngonngu i{
+            margin-right: 10px;
+        }
+        #dieukhoan{
+            width: 85%;
+            float: left;
+            text-align: right;
+            height: 34px;
+            line-height: 34px;
+        }
+        #dieukhoan a{
+            text-decoration: none;
+            color: white;
+            margin: 18px;
+        }
+        #dongba{
+            background-color: gray;
+            margin: 30px;
+            height: 40px;
+        }
+        #made1{
+            width: 15%;
+            float: left;
+        }
+        #made1 a{
+            color: white;
+            text-decoration: none;
+        }
+        #made2{
+            width: 85%;
+            float: left;
+            text-align: right;
+            height: 34px;
+            line-height: 34px;
+        }
+        #made2 a{
+            text-decoration: none;
+            color: white;
+            margin: 18px;
+        }
+/*cua phan dang nhap*/
+        .register-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .register-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="main-nav-menu">
+    <div class="container-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <div class="collapse navbar-collapse collapse-cus">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home/">Trang chủ</a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="/chitiet.html"><b>CHI TIẾT</b></a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="Banhang.html"><b>MUA XE</b></a>
+                    </li>
+<!--                    <li class="nav-item active li-nav-menu">-->
+<!--                        <a href="FormDK.html"><b>ĐĂNG KÝ</b></a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/dangnhap">ĐĂNG NHẬP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+</head>
+<body>
+<div class="register-container">
+    <h2>Đăng ký</h2>
+    <form>
+        <div class="form-group">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="fullname">tên đăng nhập</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Xác nhận mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Đăng ký</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

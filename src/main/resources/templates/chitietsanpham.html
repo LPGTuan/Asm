@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trang Chủ</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color:aliceblue;
+        }
+
+        .navbar-nav mx-auto mt-2 mt-lg-0 .nav-item active li-nav-menu {
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .main-nav-menu ul {
+            margin-top: 42px;
+        }
+
+        .main-nav-menu ul li {
+            color:beige;
+            list-style-type: none;
+            display: inline;
+            margin-left: 50px;
+        }
+
+        .logo {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 8px 10px;
+        }
+
+        .example {
+            background: rgb(169, 226, 227);
+            outline: none;
+            border-radius: 0;
+            box-shadow: 0 0 0;
+            border: none;
+            color: #1e1e1e;
+            padding-left: 15px;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 25px;
+            margin-right: 60px;
+        }
+
+        .giohang {
+
+            margin-top: 50px;
+            margin-left: 523px;
+        }
+
+        .main-nav-menu ul {
+            background-color: rgb(16, 8, 138);
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .main-nav-menu ul li {
+            color: rgb(186, 100, 184);
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -5px;
+        }
+
+        .main-nav-menu ul li a {
+            color:white;
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: black(217, 211, 140);
+        }
+
+        .mua {
+            text-align: center;
+            padding: 5px;
+            padding: 5px;
+            background-color: pink;
+            margin: 5px;
+            width: 90%;
+        }
+        .mua a{
+            text-decoration: none;
+
+        }
+
+        .san-pham {
+            border: 1px solid pink;
+            display: inline-block;
+        }
+
+        .container {
+            display: -ms-flexbox;
+        }
+
+        .example {
+            float: left;
+            max-width: 100%;
+            padding: 10px;
+            color: white;
+            font-size: 17px;
+            border: 0px solid grey;
+            border-left: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .giohang {
+            content: attr(value);
+            font-size: 12px;
+            color: black;
+            border-radius: 50%;
+            position: relative;
+            left: -8px;
+            top: -10px;
+            opacity: 0.9;
+            float: left;
+        }
+
+        .giohang.textgiohang {
+            text-decoration: none;
+        }
+
+        .cart-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(./cart-top.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 25px;
+
+        }
+
+        .colum {
+            text-align: center;
+        }
+        .testgt a{
+            text-decoration: none;
+        }
+
+
+        /* box - 3 */
+        #spnoibat{
+            width: 80%;
+            height: 1300px;
+            margin: auto;
+            text-align: center;
+            /* float: left; */
+        }
+        /* box-4 */
+        #spbanchay{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            /* float: left; */
+            /* background-color: aquamarine; */
+        }
+        .dong{
+            width: 100%;
+            float: left;
+        }
+        .san-pham-4{
+            width: calc(25% - 22px);
+            margin: 10px;
+            border: 1px solid pink;
+            float: left;
+        }
+        .san-pham-4 img{
+            width: 100%;
+        }
+        /* box-5*/
+        #tintuc{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .tintuc{
+            width: 80%;
+            background-color: crimson;
+            margin: auto;
+            text-align: center;
+
+        }
+        .tintuc-2{
+            width: calc(50% - 10px);
+            margin: 3px;
+            border: 1px solid pink;
+            float: left;
+            background-color: crimson;
+        }
+        .tintuc-2 img{
+            width: 50%;
+        }
+        #footer{
+            width: 80%;
+            /* height: 700px; */
+            margin: auto;
+            background-color: gray;
+        }
+        #dongdau{
+            width: 100%;
+            height: 600px;
+            background-color: white;
+
+            /* border: 1px solid black; */
+            box-sizing: border-box
+
+        }
+        .cot{
+            width: 25%;
+            float: left;
+            background-color: white;
+            box-sizing: border-box;
+            text-align: center;
+            /* border: 1px solid aqua; */
+            padding: 10px;
+        }
+        .cot h3{
+            /* margin-bottom: 15px; */
+            color: gray;
+            padding: 10px;
+
+        }
+        .cot a{
+            /* display: block; */
+            text-decoration: none;
+            color: grey;
+        }
+        .cot ul li{
+            list-style: none;
+            margin: 5px;
+        }
+        #donghai{
+            background-color: gray;
+            margin: 30px;
+            height: 70px;
+        }
+        #ngonngu{
+            width: 15%;
+            float: left;
+        }
+        #ngonngu button{
+            padding: 8px;
+            width: 100%;
+            background-color: white;
+            color: gray;
+            height: 34px;
+            border-radius: 17px;
+        }
+        #ngonngu i{
+            margin-right: 10px;
+        }
+        #dieukhoan{
+            width: 85%;
+            float: left;
+            text-align: right;
+            height: 34px;
+            line-height: 34px;
+        }
+        #dieukhoan a{
+            text-decoration: none;
+            color: white;
+            margin: 18px;
+        }
+        #dongba{
+            background-color: gray;
+            margin: 30px;
+            height: 40px;
+        }
+        #made1{
+            width: 15%;
+            float: left;
+        }
+        #made1 a{
+            color: white;
+            text-decoration: none;
+        }
+        #made2{
+            width: 85%;
+            float: left;
+            text-align: right;
+            height: 34px;
+            line-height: 34px;
+        }
+        #made2 a{
+            text-decoration: none;
+            color: white;
+            margin: 18px;
+        }
+        /*cua chi tiet*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+        }
+
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding: 0 20px;
+        }
+
+        .product-info h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .size {
+            width: 55px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- <div class="container">
+<div class="top-header">
+  <div class="row">
+    <div class="dragoball">
+      <a href="PS33931_asm.html" class="logodragonball">
+        <img class="logo" src="Genshin-Impact_Logo.png" width="290px" height="210px" alt="">
+
+      </a>
+    </div>
+    <form class="example" action="">
+      <input type="text" required placeholder="Tìm kiếm. . . " name="keyword">
+      <button type="submit">
+        <i class="search">
+          <img src="tìm kiếm.jpg" width="10px" height="10px" alt="">
+        </i>
+      </button>
+    </form>
+    <div class="giohang">
+      <div class="icon_textcenter">
+        <div class="icongiohang">
+          <a href="#" class="cart-icon"></a>
+          <span><sub>0</sup></span>
+        </div>
+        <div class="textgiohang">GIỎ HÀNG <a href="giohang.html" class="textgiohang">
+            <img src="giỏ hàng.jpg" alt="" width="20px" height="20px"></a>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+<div class="main-nav-menu">
+    <div class="container-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <div class="collapse navbar-collapse collapse-cus">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active li-nav-menu">
+                        <a class="nav-link active" aria-current="page" href="/home/">Trang chủ</a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="layout3.html"><b>GIỚI THIỆU</b></a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="Banhang.html"><b>MUA XE</b></a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="/home/dangky"><b>ĐĂNG KÝ</b></a>
+                    </li>
+                    <li class="nav-item active li-nav-menu">
+                        <a href="/home/dangnhap"><B>ĐĂNG NHẬP</B></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<body>
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.WglWvsY5i3kxFiypsD1uRQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Nissan GTR</h1>
+        <p class="product-price">$125.000.000</p>
+        <p class="product-description">Giới thiệu về Nissan GT-R
+            Nissan GT-R là một chiếc xe thể thao hiệu suất cao do hãng xe Nhật Bản - Nissan, được ra mắt công
+            chúng vào năm 2007. GT-R được kế thừa và phát triển của Skyline GT-R. Nissan GT-R 2023 hiện đang ở
+            thế hệ thứ 6 của mẫu xe này.</p>
+        <p class="product-description">Động cơ: 3.8 lít,V6 tăng áp kép sản sinh ra công suất tối đa đạt 565 mã
+            lực và mô men xoắn cực đại 633 Nm. So với bản tiền nhiệm thì bản Nissan GT-R 2023 này mạnh hơn 15 mã
+            lực và 3 Nm và mạnh hơn bản đầu tiên 90 mã lực. Đi kèm hộp số ly hợp kép 06 cấp, dẫn động 04 bánh
+            toàn thời gian. Tăng tốc từ 0-100km/h trong 3s và đạt tốc độ tối đa 330 km/h.</p>
+        <p class="product-description">-Kích thước: Nissan GT-R 2023 có kích thước tổng thể DxRxC lần lượt là 4.689x 1.895x 1.369 mm, chiều dài cơ sở đạt 2.779 mm. Xe có trọng lượng 1.746 kg.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.2zCU3PBcprdmWlf81F-rmAHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Ferrari 458</h1>
+        <p class="product-price">$500.000</p>
+        <p class="product-description">Ferrari 458 Italia là dòng xe kế nhiệm đàn anh F430, xe được ra mắt tại triển lãm Frankfurt Motor Show vào tháng 7/2009 và có mặt tại Việt Nam sau đó chỉ 1 năm. Với số lượng khá khiêm tốn, Ferrari 458 Italia vẫn được xem như là “của hiếm” tại Việt Nam. Xuất hiện trong bài viết là chiếc 458 Italia duy nhất tại nước ta được trang bị tùy chọn sọc cờ Ý trên thân xe ở thời điểm về nước. Tuy nhiên, sau một thời gian sử dụng, chủ nhân xe đã thay đổi lại đường sọc trên theo hướng tinh tế hơn và đồng thời nâng cấp hệ thống ống xả mới cho xe.</p>
+        <p class="product-description">Động cơ: Chiếc Ferrari 458 nguyên bản được trang bị khối động cơ V8, dung tích 4.5L cho công suất tối đa 570 mã lực, mô men xoắn cực đại đạt 540 Nm. Khối động cơ mạnh mẽ kết hợp với hộp số ly hợp kép 7 cấp cho phép chiếc xe tăng tốc từ không lên 100 km/h trong vòng chỉ 3,4 giây trước khi đạt tốc độ 325 km/h.</p>
+        <p class="product-description">Nội thất: Khoang nội thất Ferrari 458 được thiết kế thể thao như một chiếc xe đua chuyên nghiệp với nhiều trang bị tiện ích, sang trọng. Hầu hết mọi chi tiết trong khoang nội thất xe 458 đều sử dụng chất liệu carbon, da cao cấp để giúp trọng lượng xe nhẹ hết mức có thể. Các chi tiết may trên chất liệu da như bọc ghế, bọc vô lăng hết sức tỉ mỉ.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.KuRRW267hnSSRjsGHgGAMAHaEM&w=332&h=188&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Lamborghini Aventador S </h1>
+        <p class="product-price">$314.000</p>
+        <p class="product-description">Lamborghini Aventador là dòng siêu xe thể thao động cơ đặt giữa (mid-engine sports car) được sản xuất bởi hãng xe Lamborghini, Ý. Ra mắt chính thức vào ngày 28 tháng 2 năm 2011 tại triển lãm Geneva Motor Show, chiếc xe với mã là LB834 được kỳ vọng thay thế cho chiếc Lamborghini Murciélago huyền thoại.</p>
+        <p class="product-description">Động cơ: Phiên bản Aventador S (LP740-4 S) cũng dùng động cơ 6.5L V12  nhưng công suất chỉ 729Hp (740CV), mô-men xoắn 690Nm. Kết hợp hộp số tự động 7AT và hệ dẫn động AWD đem đến khả năng tăng tốc 0-100km/h trong 2,9s (bản Coupe) và 3,0s (bản Roadster). Tốc độ tối đa 350km/h.</p>
+        <p class="product-description">chưa bao giờ để khách hàng của mình thất vọng với cabin. Mở cửa bước vào Lamborghini Aventador, bạn sẽ có cảm giác như đang bước vào một thế giới khác, nơi mọi thứ thuộc về đẳng cấp và sang trọng bậc nhất. Tay lái của siêu xe này có thiết kế dạng 3 chấu ngang vát đáy khá độc đáo. Bảng đồng hồ được đầu tư kỹ lưỡng với các nút bấm hiện đại, bắt mắt. Đặc biệt bảng điều khiển được kết nối với bệ tỳ tay, khi nghỉ tay người lái vẫn có thể dễ dàng thực hiện các thao tác xoay núm xoay linh hoạt. Thật khó để không khen ngợi sự chăm sóc này.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.8v0ECotTTUV0RPnqz3_uZQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Bugatti Chiron </h1>
+        <p class="product-price">5.000.000 Euro</p>
+        <p class="product-description">Bugatti Chiron là mẫu xe thể thao 2 chỗ ngồi động cơ đặt giữa được sản xuất tại Molsheim, Pháp bởi hãng xe Bugatti Automobiles SAS. Ra mắt lần đầu tại triển lãm Geneva Motor Show tháng 3/2016, Chiron là dòng xe kế thừa siêu xe Bugatti Vayron lừng danh. Chiron được lấy tên theo tay đua người Monaco Louis Chiron, người đã từng đua cho đội Bugatti những năm 20-30 thế kỷ trước.</p>
+        <p class="product-description"></p>
+        <p class="product-description">Động cơ của chiếc xe vẫn được giữ nguyên so với người anh em Chiron phổ thông. Chiron Divo vẫn tiếp tục sử dụng khối động cơ W16 4 tăng áp quen thuộc, cho công suất siêu khủng khiếp 1.500PS. Chiếc xe có khả năng bứt tốc từ 0km lên 100km/h chỉ mất 2,4s, nhanh hơn 0,1s so với Chiron. Nói về sức mạnh thì Chiron Divo tương đương với Koenigsegg Regera.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.0LhqXP9C3iPF-EXjtolmagHaEw&w=311&h=200&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Mercedes AMG G63</h1>
+        <p class="product-price">$500.000</p>
+        <p class="product-description">Mercedes-AMG G63 2021 là dòng xe SUV hạng sang cao cấp được nhập khẩu nguyên chiếc từ Đức của Mercedes Việt Nam, với đầy đủ những công nghệ vượt trội. Thiết kế ngoại thất hầm hố, nội thất được cấu thành từ những vật liệu cao cấp giúp cho không gian nội thất vô cùng sang trọng.</p>
+        <p class="product-description"></p>
+        <p class="product-description">Khoang nội thất của Mercedes-AMG G63 được đánh giá là hiện đại và rộng rãi hơn. Theo đó, không chỉ khoảng để chân sau rộng thêm 150mm mà bề ngang của xe cũng rộng thêm 68mm. Đồng thời, Mercedes-AMG G63 cũng mang đến người dùng sự thoải mái bởi chất liệu da nappa cao cấp cùng các tùy chọn màu nội thất thời trang.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="product-image">
+            <img src="https://th.bing.com/th?id=OIP.EAAQXcjQ317SP4eeOF-DKQHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Mercedes Maybach S580 4Matic 2021</h1>
+        <p class="product-price">$680.000</p>
+        <p class="product-description">Hãng xe sang Mercedes Benz chính thức ra mắt công chúng trên toàn cầu mẫu xe Mercedes Maybach S Class 2021, hoàn toàn mới với 02 phiên bản S580 4Matic và S650 với nhiều nâng cấp từ ngoại thất đến nội thất, tiện nghi và động cơ.</p>
+        <p class="product-description">Mercedes Maybach S580 4Matic 2021 sử dụng động cơ V8, 4.0 lít, tăng áp kép, sản sinh công suất tối đa 496 mã lực, kết hợp với hệ thống hybrid 48 volt cung cấp thêm 21 mã lực, hệ dẫn động 04 bánh toàn phần.</p>
+        <p class="product-description">Mercedes Maybach S580 4Matic 2021 được hãng xe Đức hướng tới khách hàng là ông chủ, có tài xế riêng. Maybach S580 4Matic 2021 có chiều dài cơ sở lên tới 3.396mm, dài hơn bản S Class tiêu chuẩn 180mm. Giúp cho không gian hàng ghế sau rộng rãi và thoải mái hơn. Kích thước tổng thể DxRxC lần lượt là 5.469×1.920×1.508 mm.</p>
+
+
+        <button class="add-to-cart-btn">Mua xe</button>
+    </div>
+</div>
+</body>
+
+</html>
